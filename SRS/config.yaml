@@ -1,0 +1,22 @@
+### DIRECTORY SETTINGS ###
+data_directory: /home/pi/Desktop/DataNX
+cryo_subdir: cryo
+
+### COMMUNICATION SETTINGS ###
+sim900_device: /dev/ADR_sim900
+hc_device:     /dev/ADR_heatercontroller
+mc_device:     /dev/ADR_magcontrol
+
+### LOGGING SETTINGS ###
+debug: True
+
+### ADR CYCLE SETTINGS ###
+cycle_magnitude: 7.0
+cycle_maxemf: 150
+cycle_emfchannel: 1
+
+## BLACK BODY SETTINGS ###
+
+test2: 780
+test3:                   1234
+test4: 0.0
