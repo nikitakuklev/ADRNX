@@ -7,7 +7,7 @@ The core problem with using SRS900 mainframe is that extreme care is needed to a
 
 For most measurement devices, two DAQ approaches are provided - a single shot query, and continuous streaming. In case of latter, modules are instructed to continuously stream data, which is buffered by ADRNX in the background. User code can then asynchronously query last result or await next data event. 
 
-It has to be noted that there are a number of quircks with messaging protocol - from occasional loss/fragmentation of messages to incorrect header lengths to weird LF/CR behaviour. As such, each module has extensive custom handling section which rejects impossible values, does various manipulations to recover data, and ultimately tries to only let valid messages pass. If you are having communication errors, this would be the place to check for known issues.
+It has to be noted that there are a number of quirks with messaging protocol - from occasional loss/fragmentation of messages to incorrect header lengths to weird LF/CR behaviour. As such, each module has extensive custom handling section which rejects impossible values, does various manipulations to recover data, and ultimately tries to only let valid messages pass. If you are having communication errors, this would be the place to check for known issues.
 
 
 
